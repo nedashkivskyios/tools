@@ -7,6 +7,7 @@
     "@chakra-ui/react": "^2.4.2",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@supabase/supabase-js": "^2.1.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -29,7 +30,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "types": "npx supabase gen types typescript --local > types/supabase.ts"
   },
   "eslintConfig": {
     "plugins": [
