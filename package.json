@@ -10,11 +10,14 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "framer-motion": "^7.6.15",
+    "prettier": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
@@ -29,6 +32,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "plugins": [
+      "jsx-a11y"
+    ],
+    "rules": {
+      "jsx-a11y/control-has-associated-label": 2,
+      "jsx-a11y/no-static-element-interactions": 2,
+      "testing-library/prefer-screen-queries": "off"
+    },
     "extends": [
       "react-app",
       "react-app/jest"
