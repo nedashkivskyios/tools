@@ -1,10 +1,11 @@
 import React from 'react';
+import {Center} from "@chakra-ui/react";
 
 const TemporaryMain = () => {
     return (
-        <div>
+        <Center h="100vh">
             TemporaryMain
-        </div>
+        </Center>
     );
 };
 
